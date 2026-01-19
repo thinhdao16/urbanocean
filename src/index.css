@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/fonts/RobotoSlab-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@theme {
+  /* Colors */
+  --color-skater-yellow: #fad601;
+  --color-ocean-teal: #4DD0E1;
+  --color-urban-pink: #d95e9e;
+  --color-urban-pink-light: #FFB6C1;
+  --color-ocean-cyan: #73d0d1;
+  
+  /* Fonts */
+  --font-roboto-slab: 'Roboto Slab', serif;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Display Font Class */
+.font-display {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}

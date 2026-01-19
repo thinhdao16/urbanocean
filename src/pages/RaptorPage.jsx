@@ -1,0 +1,182 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import NavbarTry from '../components/NavbarTry'
+
+function RaptorPage() {
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 py-20">
+        <NavbarTry fixed={false} className='absolute!' />
+        <img
+          src="/assets/roadshow_page_main.png"
+          alt="Roadshow Tour"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.5]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
+
+        <div className="relative z-10 text-center max-w-5xl">
+          <h1 className="text-6xl md:text-8xl lg:text-8xl font-display font-black text-white mb-8 uppercase leading-tight">
+            THE URBAN OCEAN
+          </h1>
+          <p className="text-lg md:text-2xl text-white mb-6 leading-relaxed">
+            Bringing the soul of the ocean into the heart of the city.
+          </p>
+          <p className="text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
+            From London's historic streets to the energetic square of Devonshire Green,<br />
+            Raptor is your companion for riding every concrete wave.
+          </p>
+        </div>
+
+        {/* Bottom Section - NO BEACH? NO BOTHER */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent py-12 px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-black text-white leading-tight">
+              NO BEACH?<br />
+              NO BOTHER
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Launch Section */}
+      <section className="bg-skater-yellow text-black py-2 px-4 md:px-8">
+        <NavbarTry fixed={false}  />
+
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-pink-500 font-black text-xl md:text-2xl uppercase italic mb-4">PRODUCT LAUNCH</p>
+          <h2 className="text-center text-5xl md:text-[100px] font-display leading-[0.8] mb-16 md:mb-20 text-[#00BCD4] italic">
+            MEET THE RAPTOR<br />
+            URBAN OCEAN
+          </h2>
+
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
+            <div>
+              <h3 className="text-3xl md:text-5xl font-display mb-8 italic">BORN FOR THE STREETS, INSPIRED BY THE SEA</h3>
+
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">"Ocean Tough" Material (Ultra-Durable):</h4>
+                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
+                    7-ply Canadian maple reinforced with carbon fiber for power and long-lasting performance.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">"Urban Ocean" Aesthetic:</h4>
+                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
+                    Teal and sand wave graphics bring a cool, coastal flow into the heart of the city, finished with bold RAPTOR x SCATERS graffiti logos.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">Long-Distance Carving Truck Technology:</h4>
+                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
+                    Tuned trucks support fluid S-curves and zig-zag lines, keeping speed with less foot-down.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">"No Beach? No Bother." Grip:</h4>
+                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
+                    High-grip tape with an exclusive message at the tail for instant street cred.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute top-0 right-0 w-full h-full bg-[#00BCD4] -rotate-6 translate-x-4 translate-y-4" />
+              <div className="relative aspect-[3/4] bg-white p-4 shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?auto=format&fit=crop&q=80&w=800"
+                  alt="The Raptor Skateboard"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Elite Collabs Section */}
+      <section className="bg-[#4DD0E1] text-black py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-black text-[#FF1493] mb-2 uppercase">
+              THE ELITE COLLABS
+            </h2>
+            <h3 className="text-3xl md:text-5xl lg:text-6xl font-display font-black text-[#FF1493] uppercase">
+              SURF INTO THE CITY
+            </h3>
+          </div>
+
+          <p className="text-center text-base md:text-lg mb-16 max-w-4xl mx-auto leading-relaxed">
+            Unlock exclusive limited-edition gear when you join the Raptor Roadshow at our three iconic tour stops.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto mb-12">
+            {[
+              {
+                city: 'LONDON',
+                item: 'Scaters x Southbank Tee',
+                desc: 'A minimalist premium tee designed for the iconic London skater.',
+                img: '/assets/raptop_tee.png',
+                marker: '♥'
+              },
+              {
+                city: 'BIRMINGHAM',
+                item: 'Scaters x Creation Knee Pads',
+                desc: 'Impact-ready knee pads built for fast, modern skatepark sessions.',
+                img: '/assets/raptor_balo.png',
+                marker: '♦'
+              },
+              {
+                city: 'SHEFFIELD',
+                item: 'Scaters x Dev Green Bottle',
+                desc: 'A steel-built thermal bottle inspired by the open concrete flow of Dev Green.',
+                img: '/assets/raptor_bot.png',
+                marker: '♠'
+              }
+            ].map((collab, i) => (
+              <div key={i} className="text-center">
+                <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 mb-4 min-h-[300px] flex items-center justify-center">
+                  <img
+                    src={collab.img}
+                    alt={collab.item}
+                    className="w-full h-full object-contain max-h-[250px]"
+                  />
+                </div>
+                <div className="text-left">
+                  <div className="flex items-start gap-2 mb-2">
+                    <span className="text-[#FF1493] text-2xl font-bold">{collab.marker}</span>
+                    <div>
+                      <h4 className="text-lg md:text-xl font-black text-[#FF1493] uppercase">
+                        {collab.city} | {collab.item}
+                      </h4>
+                      <p className="text-sm leading-relaxed mt-2">
+                        {collab.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-lg md:text-xl font-black leading-relaxed max-w-4xl mx-auto" style={{
+            textShadow: '2px 2px 0px rgba(255,255,255,0.8), -1px -1px 0px rgba(255,255,255,0.8), 1px -1px 0px rgba(255,255,255,0.8), -1px 1px 0px rgba(255,255,255,0.8)'
+          }}>
+            Top 50 early participants will receive an exclusive collaboration product<br />
+            at each Roadshow.
+          </p>
+        </div>
+      </section>
+
+   
+
+    </div>
+  )
+}
+
+export default RaptorPage
