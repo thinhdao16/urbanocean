@@ -118,7 +118,7 @@ function HomePage() {
         <img
           src="/assets/home_bg_pink.png"
           alt="Sunset Beach"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-fill"
         />
         <div className="relative z-10  text-white w-full">
           <NavbarTry fixed={false} />
@@ -165,13 +165,13 @@ function HomePage() {
             ROADSHOW TOUR FOR<br />
             <span className="">THIS SPRING 2026!</span>
           </h2>
-         
+
         </div>
       </section>
 
       {/* Upcoming Events Grid */}
       <section className="bg-[#c4f1f1] text-black py-4 px-4 md:px-8">
-        <NavbarTry fixed={false}  />
+        <NavbarTry fixed={false} />
 
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-[#FF1493] font-black text-lg md:text-4xl uppercase mb-4">UPCOMING EVENT</p>
@@ -181,26 +181,26 @@ function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
             {[
-              { 
-                city: 'LONDON', 
-                date: 'APR 04', 
-                loc: 'Southbank Centre', 
+              {
+                city: 'LONDON',
+                date: 'APR 04',
+                loc: 'Southbank Centre',
                 desc: '3-move line. Style over technicaly.',
-                img: '/assets/home_medium_1.jpeg' 
+                img: '/assets/home_medium_1.jpeg'
               },
-              { 
-                city: 'BIRMINGHAM', 
-                date: 'APR 11', 
-                loc: 'Creation Skate Park', 
+              {
+                city: 'BIRMINGHAM',
+                date: 'APR 11',
+                loc: 'Creation Skate Park',
                 desc: 'Line over tricks. Smooth flow, clean speed.',
-                img: '/assets/home_medium_2.jpeg' 
+                img: '/assets/home_medium_2.jpeg'
               },
-              { 
-                city: 'SHEFFIELD', 
-                date: 'APR 18', 
-                loc: 'Devonshire Green', 
+              {
+                city: 'SHEFFIELD',
+                date: 'APR 18',
+                loc: 'Devonshire Green',
                 desc: 'Long-distance carving. Smooth S-curves.',
-                img: '/assets/home_medium_3.jpeg' 
+                img: '/assets/home_medium_3.jpeg'
               }
             ].map((ev) => (
               <div key={ev.city} className="bg-[#f9f3ee] rounded-3xl shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300">
@@ -225,8 +225,8 @@ function HomePage() {
                 <div className="p-4 md:p-4 text-left">
                   <h4 className="text-2xl font-black mb-3">{ev.loc}</h4>
                   <p className="text-base text-gray-700 mb-6">{ev.desc}</p>
-                  
-                  <Link 
+
+                  <Link
                     to="/roadshow"
                     className="block w-full py-4 bg-[#8bbdbd] text-white text-center font-black text-sm uppercase tracking-wide rounded-full hover:bg-[#00BCD4] transition-colors"
                   >
@@ -257,7 +257,7 @@ function HomePage() {
             className="group relative  flex justify-center"
           >
             <img src="/assets/home_page_surf_join.png" alt="" className='w-[80%]' />
-          
+
           </Link>
         </div>
       </section>
