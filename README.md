@@ -5,16 +5,18 @@ Website hoàn chỉnh cho thương hiệu skateboard Urban Ocean Scaters UK vớ
 ## 🎨 Tính năng
 
 - **5 trang chính:**
-  - **Homepage**: Trang chủ với hero section, giới thiệu thương hiệu, và các sự kiện sắp tới
+  - **Homepage**: Trang chủ với video hero, giới thiệu thương hiệu, và các sự kiện sắp tới
   - **About Us**: Giới thiệu về công ty, sứ mệnh, DNA và đội ngũ
-  - **The Raptor**: Chi tiết sản phẩm skateboard Raptor với thông số kỹ thuật
-  - **Roadshow Tour**: Thông tin chi tiết về tour roadshow 3 thành phố
+  - **The Raptor**: Chi tiết sản phẩm skateboard với specs và collaboration products
+  - **Roadshow Tour**: Thông tin chi tiết về tour 3 thành phố (London, Birmingham, Sheffield)
   - **Register**: Form đăng ký tham gia sự kiện
+  - **Evening Events**: Hiển thị dữ liệu từ XML về VIP evening events
 
 - **Responsive Design**: Hoạt động tốt trên mọi thiết bị (mobile, tablet, desktop)
 - **React Router**: Điều hướng mượt mà giữa các trang
 - **Tailwind CSS**: Styling hiện đại với các màu sắc nổi bật
-- **Interactive UI**: Hiệu ứng hover, transitions, và animations
+- **XML Data Integration**: Đọc và hiển thị dữ liệu từ XML file
+- **Custom Fonts**: Sử dụng Roboto Slab font từ local assets
 
 ## 🚀 Cài đặt và Chạy
 
@@ -35,7 +37,7 @@ npm run dev
 ```
 
 3. **Mở trình duyệt:**
-Truy cập `http://localhost:5173` (hoặc port được hiển thị trong terminal)
+Truy cập `http://localhost:5173`
 
 4. **Build cho production:**
 ```bash
@@ -52,29 +54,33 @@ npm run preview
 ```
 urbanocean-scaters-uk/
 ├── public/
-│   └── assets/          # Hình ảnh (thay thế bằng hình của bạn)
-│       ├── home_page.png
-│       ├── about_us.png
-│       ├── the-raptor.png
-│       ├── roadshow.png
-│       └── join-now.png
+│   ├── assets/          # Hình ảnh, fonts, videos
+│   │   ├── fonts/
+│   │   ├── logo.png
+│   │   ├── home_slide.mp4
+│   │   └── ...
+│   └── roadshow-evening-events.xml  # XML data file
 ├── src/
 │   ├── components/      # React components
 │   │   ├── Navbar.jsx
-│   │   └── Footer.jsx
+│   │   ├── Footer.jsx
+│   │   └── NavbarTry.jsx
 │   ├── pages/          # Các trang chính
 │   │   ├── HomePage.jsx
 │   │   ├── AboutPage.jsx
 │   │   ├── RaptorPage.jsx
 │   │   ├── RoadshowPage.jsx
-│   │   └── RegisterPage.jsx
+│   │   ├── RegisterPage.jsx
+│   │   └── EveningEventsPage.jsx
 │   ├── App.jsx         # Main app component
 │   ├── main.jsx        # Entry point
 │   └── index.css       # Global styles
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
-└── vite.config.js
+├── vite.config.js
+├── vercel.json         # Vercel deployment config
+└── README.md
 ```
 
 ## 🎨 Màu sắc chính
@@ -84,21 +90,51 @@ urbanocean-scaters-uk/
 - **Pink**: `#FF1493` - Nhấn mạnh CTA và highlights
 - **Black**: `#1a1a1a` - Background và text
 
+## 📄 XML Data
+
+File `roadshow-evening-events.xml` chứa thông tin về VIP evening events:
+- Event date và location
+- Main entrant details (name, age, DOB, experience)
+- Parent/guardian info (cho người dưới 18 tuổi)
+- Contact details (phone, email, address)
+- Guests information
+- Skateboarding preferences
+
+### Xem XML data:
+- Raw XML: `http://localhost:5173/roadshow-evening-events.xml`
+- Formatted view: `http://localhost:5173/evening-events`
+
+## 🚀 Deploy lên Vercel
+
+### Cách nhanh nhất:
+```bash
+# Cài Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel --prod
+```
+
+### Hoặc qua GitHub:
+1. Push code lên GitHub
+2. Import vào Vercel Dashboard
+3. Deploy tự động
+
+**Chi tiết xem file:** `DEPLOYMENT.md`
+
 ## 🖼️ Thay thế hình ảnh
 
-Hiện tại website đang sử dụng hình ảnh placeholder. Để thay thế bằng hình ảnh thực:
+Hiện tại website đang sử dụng hình ảnh placeholder. Để thay thế:
 
-1. **Đặt hình ảnh vào thư mục `public/assets/`:**
-   - `home_page.png` - Hero background cho trang chủ
-   - `about_us.png` - Hình về công ty
-   - `the-raptor.png` - Hình sản phẩm Raptor
-   - `roadshow.png` - Background cho roadshow tour
-   - `join-now.png` - Background cho form đăng ký
-
-2. **Hoặc tải từ website Canva:**
-   - Truy cập: https://dsadasdad.my.canva.site/urbanocean-scaters-uk/
-   - Tải các hình ảnh từ website
-   - Đặt vào thư mục `public/assets/`
+1. **Đặt hình ảnh vào `public/assets/`:**
+   - `home_slide.mp4` - Video hero cho trang chủ
+   - `logo.png` - Logo chính
+   - `home_stake_1.jpg`, `home_stake_2.jpg`, `home_stake_3.png` - Born in Bristol section
+   - `home_medium_1.jpeg`, `home_medium_2.jpeg`, `home_medium_3.jpeg` - Event cards
+   - `about_stake.png` - About page hero
+   - `about_stakes_men.png` - About DNA section
+   - `raptop_tee.png`, `raptor_balo.png`, `raptor_bot.png` - Elite Collabs
+   - `facebook.webp`, `igs.jpeg`, `tiktok.avif` - Social icons
 
 ## 📱 Responsive Breakpoints
 
@@ -114,34 +150,38 @@ Hiện tại website đang sử dụng hình ảnh placeholder. Để thay thế
 - Active state cho trang hiện tại
 
 ### Homepage
-- Hero section với CTA
-- Giới thiệu thương hiệu
-- Preview sản phẩm
-- Danh sách sự kiện
+- Video hero section với CTA buttons
+- Born in Bristol section với 3 hình
+- Urban Ocean introduction
+- Upcoming events cards
+- CTA section
 
 ### About Page
-- Câu chuyện thương hiệu
-- Sứ mệnh và tầm nhìn
-- DNA của công ty
-- Đội ngũ riders
+- Split-screen hero layout
+- Our Soul & Mission sections
+- DNA section với badges
+- Team section
 
 ### Raptor Page
-- Chi tiết sản phẩm
-- Thông số kỹ thuật
-- Collaboration products
-- CTA đăng ký
+- Hero với "The Urban Ocean" title
+- Product details
+- Elite Collabs section với 3 products
+- Tech specs
 
 ### Roadshow Page
-- Timeline tour
-- Chi tiết từng sự kiện
-- Exclusive gear cho mỗi địa điểm
+- Hero với 3 city images
+- Event details cho từng thành phố
 - FAQ section
 
 ### Register Page
 - Form đăng ký đầy đủ
 - Validation
-- Thông tin benefits
-- Thông tin liên hệ
+- Benefits information
+
+### Evening Events Page
+- Đọc XML data tự động
+- Hiển thị entries với cards
+- Filter và search (có thể thêm)
 
 ## 🛠️ Công nghệ sử dụng
 
@@ -149,44 +189,37 @@ Hiện tại website đang sử dụng hình ảnh placeholder. Để thay thế
 - **React Router DOM** - Routing
 - **Tailwind CSS 4** - Styling
 - **Vite** - Build tool
-- **PostCSS** - CSS processing
+- **@tailwindcss/vite** - Tailwind plugin
+- **XML Parser** - DOMParser API
 
 ## 📝 Tùy chỉnh
 
 ### Thay đổi màu sắc
-Chỉnh sửa file `tailwind.config.js`:
-
-```javascript
-colors: {
-  "skater-yellow": "#FFEB3B",
-  "urban-pink": "#FF69B4",
-  // Thêm màu của bạn
-}
-```
+Chỉnh sửa `tailwind.config.js` hoặc `src/index.css`
 
 ### Thay đổi fonts
-Chỉnh sửa file `tailwind.config.js`:
+Fonts được load từ `public/assets/fonts/`
 
-```javascript
-fontFamily: {
-  urban: ["Inter", "sans-serif"],
-  display: ["Impact", "sans-serif"],
-}
-```
+### Thêm pages mới
+1. Tạo file trong `src/pages/`
+2. Thêm route trong `src/App.jsx`
+3. Thêm link trong Navbar/Footer
 
-## 🚀 Deploy
+## 🐛 Troubleshooting
 
-### Vercel
-```bash
-npm install -g vercel
-vercel
-```
+### Tailwind không hoạt động:
+- Kiểm tra `@tailwindcss/vite` đã cài đặt
+- Xóa `node_modules/.vite` và restart
 
-### Netlify
-```bash
-npm run build
-# Drag & drop thư mục dist vào Netlify
-```
+### XML không load:
+- Kiểm tra file trong `public/`
+- Check browser console cho errors
+- Verify XML syntax
+
+### Video không play:
+- Check file path
+- Verify video format (mp4)
+- Check browser autoplay policies
 
 ## 📞 Liên hệ
 
@@ -194,7 +227,46 @@ npm run build
 - Phone: +44 20 1234 5678
 - Social: @scatersuk
 
+## 🤖 Python Chatbot
+
+Website bao gồm 2 Python chatbots để cung cấp thông tin về roadshow và skateboard:
+
+### Chatbot Gốc (Workshop Version)
+```bash
+python chatbot_original.py
+```
+- Chatbot đơn giản với keyword matching cơ bản
+- Dùng cho mục đích học tập/workshop
+
+### Chatbot Nâng cao (Enhanced Version) - Khuyên dùng
+```bash
+python chatbot_enhanced.py
+```
+- Chatbot đầy đủ với thông tin chi tiết về:
+  - 3 thành phố roadshow (London, Birmingham, Sheffield)
+  - Thông số kỹ thuật The Raptor skateboard
+  - VIP evening events
+  - Quy trình đăng ký
+  - Khuyến mãi và quà tặng
+
+### Các lệnh chatbot:
+- `cities` - Xem tất cả thành phố và ngày
+- `london`, `birmingham`, `sheffield` - Chi tiết từng thành phố
+- `raptor` - Thông tin skateboard
+- `evening` - VIP events
+- `register` - Hướng dẫn đăng ký
+- `promotions` - Quà tặng và khuyến mãi
+- `help` - Hiển thị tất cả lệnh
+- `quit` - Thoát
+
+### Hỏi tự nhiên:
+- "When is the London event?"
+- "What skateboard are you launching?"
+- "How do I register?"
+- "What can I win?"
+
+**Chi tiết xem file:** `CHATBOT_INSTRUCTIONS.md`
+
 ## 📄 License
 
 © 2026 SCATERS UK. All rights reserved.
-# urbanocean

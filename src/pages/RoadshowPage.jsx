@@ -12,7 +12,7 @@ function RoadshowPage() {
       activity: '"THE CONCRETE WAVE" LINE',
       promotion: 'Promotion when registering online:',
       benefits: ['Receive Scaters x Southbank Tee', 'Receive Sunscreen Wax'],
-      img: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1200',
+      img: '/assets/home_stake_1.jpg',
       color: '#FFB6C1'
     },
     {
@@ -23,7 +23,7 @@ function RoadshowPage() {
       activity: 'BOWL JAM',
       promotion: 'Promotion when registering online:',
       benefits: ['Receive Bucket Hat', 'Receive Sunscreen Wax'],
-      img: 'https://images.unsplash.com/photo-1547447134-cd3f5c716030?auto=format&fit=crop&q=80&w=1200',
+      img: '/assets/home_stake_2.jpg',
       color: '#FFEB3B'
     },
     {
@@ -34,7 +34,7 @@ function RoadshowPage() {
       activity: '"STEEL CITY SURF" CRUISE',
       promotion: 'Promotion when registering online:',
       benefits: ['Receive Steel Bottle', 'Receive Sunscreen Wax'],
-      img: 'https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?auto=format&fit=crop&q=80&w=1200',
+      img: '/assets/home_stake_3.png',
       color: '#4DD0E1'
     }
   ]
@@ -44,7 +44,7 @@ function RoadshowPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen bg-[#f9e7e5]  md:px-8 overflow-hidden">
         <NavbarTry fixed={false} />
-        
+
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <div className="text-center mb-12">
@@ -71,7 +71,7 @@ function RoadshowPage() {
 
           {/* Explore Button */}
           <div className="text-center mb-16">
-            <Link 
+            <Link
               to="#events"
               className="inline-block px-12 py-4 border-2 border-[#FF1493] text-[#FF1493] rounded-full text-lg font-black uppercase tracking-wide hover:bg-[#FF1493] hover:text-white transition-all"
             >
@@ -80,15 +80,15 @@ function RoadshowPage() {
           </div>
 
           {/* Tour Description */}
-       
+
 
           {/* City Images */}
-          <div className="relative grid grid-cols-3 gap-4 max-w-6xl mx-auto">
+          <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {/* London */}
             <div className="relative">
-              <img 
-                src="/assets/london.png" 
-                alt="London" 
+              <img
+                src="/assets/london.png"
+                alt="London"
                 className="w-full h-full object-cover rounded-lg"
               />
               <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -96,24 +96,24 @@ function RoadshowPage() {
             </div>
 
             {/* Birmingham */}
-              <div className="relative">
-                   <div className="text-center mb-16 max-w-4xl mx-auto">
-            <p className="text-sm md:text-base leading-relaxed text-black">
-              The SCATERS Roadshow Tour is not your typical tricks showcase. It's about <span className="font-black">line, flow, rhythm,</span> and how you move with the space around you. From urban undercrofts to bowls and open plazas, <span className="font-black">each city Challenges</span> skaters to read the ground, find their wave, and ride it clean.
-            </p>
-          </div>
-              <img 
-                src="/assets/sheffield.png" 
-                alt="Sheffield" 
-                className="w-full aspect-[5/3] object-cover rounded-lg"
+            <div className="relative">
+              <div className="text-center mb-16 max-w-4xl mx-auto">
+                <p className="text-sm md:text-base leading-relaxed text-black">
+                  The SCATERS Roadshow Tour is not your typical tricks showcase. It's about <span className="font-black">line, flow, rhythm,</span> and how you move with the space around you. From urban undercrofts to bowls and open plazas, <span className="font-black">each city Challenges</span> skaters to read the ground, find their wave, and ride it clean.
+                </p>
+              </div>
+              <img
+                src="/assets/sheffield.png"
+                alt="Sheffield"
+                className="w-full aspect-auto object-cover rounded-lg"
               />
               <div className="absolute bottom-4 left-4 right-4 text-white">
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="/assets/birmingham.png" 
-                alt="Birmingham" 
+              <img
+                src="/assets/birmingham.png"
+                alt="Birmingham"
                 className="w-full h-full object-cover rounded-lg"
               />
               <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -121,28 +121,31 @@ function RoadshowPage() {
             </div>
 
             {/* Sheffield */}
-          
+
           </div>
         </div>
       </section>
-  
+
 
       {/* Event Details */}
       {events.map((event, i) => (
-        <section 
-          key={i} 
-          className="relative min-h-screen py-24 md:py-32 px-4 md:px-8 flex items-center"
+        <section
+          key={i}
+          className="relative min-h-screen py-16  px-4 md:px-8 flex items-center"
           style={{ backgroundColor: event.color }}
         >
+
           <div className="absolute inset-0 opacity-20">
-            <img 
-              src={event.img} 
-              alt={event.city} 
+            <img
+              src={event.img}
+              alt={event.city}
               className="w-full h-full object-cover"
             />
           </div>
-          
+        <NavbarTry fixed={false} className='absolute!' />
+
           <div className="relative z-10 max-w-7xl mx-auto w-full">
+
             <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
               <div className={i % 2 === 0 ? 'order-1' : 'order-2'}>
                 <div className="bg-white/90 backdrop-blur-md p-8 md:p-12 shadow-2xl">
@@ -155,18 +158,17 @@ function RoadshowPage() {
                   <p className="text-base md:text-xl font-black uppercase tracking-wide mb-8 text-black/80">
                     Location: {event.location}
                   </p>
-                  
+
                   <div className="space-y-6 mb-8">
                     <div>
-                      <h4 className="text-sm font-black uppercase tracking-widest mb-2 text-[#FF1493]">Time</h4>
                       <p className="text-sm font-black uppercase tracking-wide text-black/80">{event.time}</p>
                     </div>
-                    
+
                     <div>
                       <h4 className="text-sm font-black uppercase tracking-widest mb-2 text-[#FF1493]">Activity</h4>
                       <p className="text-xl md:text-2xl font-display italic text-black">{event.activity}</p>
                     </div>
-                    
+
                     <div>
                       <h4 className="text-sm font-black uppercase tracking-widest mb-2 text-[#FF1493]">{event.promotion}</h4>
                       <p className="text-xs font-black uppercase tracking-wide mb-2 text-black/80">Register online:</p>
@@ -183,25 +185,25 @@ function RoadshowPage() {
                       </p>
                     </div>
                   </div>
-                  
-                  <Link 
+
+                  <Link
                     to="/register"
                     className="inline-block w-full py-4 bg-[#FF1493] text-white text-center font-black text-sm uppercase tracking-widest rounded-full hover:bg-black transition-all"
                   >
                     Register Online
                   </Link>
-                  
+
                   <button className="inline-block w-full mt-4 py-4 bg-white border-2 border-black text-black text-center font-black text-sm uppercase tracking-widest rounded-full hover:bg-black hover:text-white transition-all">
                     Ask a question →
                   </button>
                 </div>
               </div>
-              
+
               <div className={i % 2 === 0 ? 'order-2' : 'order-1'}>
                 <div className="aspect-square bg-white p-4 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
-                  <img 
-                    src={event.img} 
-                    alt={event.city} 
+                  <img
+                    src={event.img}
+                    alt={event.city}
                     className="w-full h-full object-cover grayscale"
                   />
                 </div>
@@ -212,38 +214,17 @@ function RoadshowPage() {
       ))}
 
       {/* Steel City Surf Cruise Detail */}
-      <section className="bg-[#1a1a1a] text-white py-24 md:py-32 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-5xl md:text-[100px] font-display leading-[0.8] mb-8 text-[#FFEB3B] italic">
-            "STEEL CITY SURF" CRUISE
-          </h2>
-          <p className="text-base md:text-xl font-black uppercase tracking-wide mb-16 max-w-4xl mx-auto leading-relaxed">
-            The final stop. The longest ride. The ultimate test of flow and endurance.<br />
-            Carve through Sheffield's streets like waves on the ocean.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              { title: 'Long Distance', desc: 'Extended route through Sheffield\'s iconic streets' },
-              { title: 'Smooth Carving', desc: 'Perfect your S-curves and flowing lines' },
-              { title: 'Urban Surfing', desc: 'Experience the concrete wave at its finest' }
-            ].map((feature, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-md p-8 rounded-lg hover:bg-white/20 transition-all">
-                <h3 className="text-2xl md:text-3xl font-display mb-4 italic text-[#FFEB3B]">{feature.title}</h3>
-                <p className="text-sm font-black uppercase tracking-wide leading-relaxed opacity-80">{feature.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* FAQ Section */}
-      <section className="bg-[#FFB6C1] text-black py-24 md:py-32 px-4 md:px-8">
+      <section className="bg-[#FFB6C1] text-black py-4 px-4 md:px-8">
+        <NavbarTry fixed={false}  />
+
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-[100px] font-display leading-[0.8] mb-16 text-center italic text-[#FF1493]">
             FAQ
           </h2>
-          
+
           <div className="space-y-6">
             {[
               {
@@ -274,9 +255,9 @@ function RoadshowPage() {
 
       {/* CTA Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        <img 
-          src="/assets/join-now.png" 
-          alt="Join Now" 
+        <img
+          src="/assets/join-now.png"
+          alt="Join Now"
           className="absolute inset-0 w-full h-full object-cover brightness-[0.3]"
         />
         <div className="relative z-10 text-center px-4">
@@ -286,7 +267,7 @@ function RoadshowPage() {
           <h3 className="text-4xl md:text-[80px] font-display text-white mb-12 italic leading-none">
             SURF INTO THE CITY
           </h3>
-          <Link 
+          <Link
             to="/register"
             className="group relative inline-block"
           >

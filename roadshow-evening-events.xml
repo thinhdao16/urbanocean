@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eveningEvents>
+    <!-- Entry 1: Adult main entrant with 2 guests -->
+    <entry>
+        <eventDate>2026-04-04</eventDate>
+        <eventLocation>London</eventLocation>
+        <mainEntrant>
+            <name>James Anderson</name>
+            <dateOfBirth>1995-03-15</dateOfBirth>
+            <age>30</age>
+            <sex>Male</sex>
+            <skateboardingExperience>Advanced - 12 years experience, competed in regional competitions</skateboardingExperience>
+            <skateboardsOwned>
+                <skateboard>Street deck - 8.25 inch</skateboard>
+                <skateboard>Cruiser board</skateboard>
+                <skateboard>Longboard</skateboard>
+            </skateboardsOwned>
+            <favouriteProfessionals>
+                <professional>Tony Hawk</professional>
+                <professional>Nyjah Huston</professional>
+                <professional>Sky Brown</professional>
+            </favouriteProfessionals>
+            <contactDetails>
+                <phoneNumbers>
+                    <phone type="mobile" preferred="true">+44 7700 900123</phone>
+                    <phone type="home" preferred="false">+44 20 7946 0958</phone>
+                    <phone type="work" preferred="false">+44 20 7946 0123</phone>
+                </phoneNumbers>
+                <email>james.anderson@email.com</email>
+                <address>
+                    <street>45 Camden High Street</street>
+                    <city>London</city>
+                    <postcode>NW1 7JH</postcode>
+                    <country>United Kingdom</country>
+                </address>
+            </contactDetails>
+        </mainEntrant>
+        <guests>
+            <guest>
+                <name>Sarah Mitchell</name>
+                <age>28</age>
+            </guest>
+            <guest>
+                <name>David Thompson</name>
+                <age>32</age>
+            </guest>
+        </guests>
+    </entry>
+
+    <!-- Entry 2: Minor main entrant with parent/guardian -->
+    <entry>
+        <eventDate>2026-04-11</eventDate>
+        <eventLocation>Birmingham</eventLocation>
+        <mainEntrant>
+            <name>Emily Roberts</name>
+            <dateOfBirth>2010-07-22</dateOfBirth>
+            <age>15</age>
+            <sex>Female</sex>
+            <parentGuardian>
+                <name>Catherine Roberts</name>
+                <relationship>Mother</relationship>
+            </parentGuardian>
+            <skateboardingExperience>Intermediate - 3 years experience, regular skatepark visitor</skateboardingExperience>
+            <skateboardsOwned>
+                <skateboard>Street deck - 7.75 inch</skateboard>
+                <skateboard>Mini cruiser</skateboard>
+            </skateboardsOwned>
+            <favouriteProfessionals>
+                <professional>Sky Brown</professional>
+                <professional>Leticia Bufoni</professional>
+                <professional>Rayssa Leal</professional>
+            </favouriteProfessionals>
+            <contactDetails>
+                <phoneNumbers>
+                    <phone type="mobile" preferred="true">+44 7700 900456</phone>
+                    <phone type="home" preferred="false">+44 121 496 0789</phone>
+                </phoneNumbers>
+                <email>emily.roberts@email.com</email>
+                <address>
+                    <street>12 Broad Street</street>
+                    <city>Birmingham</city>
+                    <postcode>B1 2EA</postcode>
+                    <country>United Kingdom</country>
+                </address>
+            </contactDetails>
+        </mainEntrant>
+        <guests>
+            <guest>
+                <name>Michael Roberts</name>
+                <age>45</age>
+            </guest>
+            <guest>
+                <name>Sophie Williams</name>
+                <age>19</age>
+            </guest>
+        </guests>
+    </entry>
+
+    <!-- Entry 3: Adult main entrant with 1 guest -->
+    <entry>
+        <eventDate>2026-04-18</eventDate>
+        <eventLocation>Sheffield</eventLocation>
+        <mainEntrant>
+            <name>Marcus Johnson</name>
+            <dateOfBirth>1988-11-30</dateOfBirth>
+            <age>37</age>
+            <sex>Male</sex>
+            <skateboardingExperience>Expert - 20 years experience, former semi-professional skater</skateboardingExperience>
+            <skateboardsOwned>
+                <skateboard>Street deck - 8.5 inch</skateboard>
+                <skateboard>Bowl/Vert deck - 9 inch</skateboard>
+                <skateboard>Cruiser board</skateboard>
+                <skateboard>Electric skateboard</skateboard>
+            </skateboardsOwned>
+            <favouriteProfessionals>
+                <professional>Rodney Mullen</professional>
+                <professional>Tony Hawk</professional>
+                <professional>Bob Burnquist</professional>
+            </favouriteProfessionals>
+            <contactDetails>
+                <phoneNumbers>
+                    <phone type="work" preferred="true">+44 114 272 0123</phone>
+                    <phone type="mobile" preferred="false">+44 7700 900789</phone>
+                    <phone type="home" preferred="false">+44 114 272 0456</phone>
+                </phoneNumbers>
+                <email>marcus.johnson@email.com</email>
+                <address>
+                    <street>78 Division Street</street>
+                    <city>Sheffield</city>
+                    <postcode>S1 4GF</postcode>
+                    <country>United Kingdom</country>
+                </address>
+            </contactDetails>
+        </mainEntrant>
+        <guests>
+            <guest>
+                <name>Rachel Green</name>
+                <age>35</age>
+            </guest>
+        </guests>
+    </entry>
+
+    <!-- Entry 4: Young adult main entrant with 2 guests -->
+    <entry>
+        <eventDate>2026-04-04</eventDate>
+        <eventLocation>London</eventLocation>
+        <mainEntrant>
+            <name>Olivia Chen</name>
+            <dateOfBirth>2004-05-18</dateOfBirth>
+            <age>21</age>
+            <sex>Female</sex>
+            <skateboardingExperience>Beginner - 1 year experience, learning street skating</skateboardingExperience>
+            <skateboardsOwned>
+                <skateboard>Complete street deck - 8 inch</skateboard>
+            </skateboardsOwned>
+            <favouriteProfessionals>
+                <professional>Leticia Bufoni</professional>
+                <professional>Mariah Duran</professional>
+            </favouriteProfessionals>
+            <contactDetails>
+                <phoneNumbers>
+                    <phone type="mobile" preferred="true">+44 7700 900321</phone>
+                </phoneNumbers>
+                <email>olivia.chen@email.com</email>
+                <address>
+                    <street>23 Brick Lane</street>
+                    <city>London</city>
+                    <postcode>E1 6QL</postcode>
+                    <country>United Kingdom</country>
+                </address>
+            </contactDetails>
+        </mainEntrant>
+        <guests>
+            <guest>
+                <name>Daniel Park</name>
+                <age>22</age>
+            </guest>
+            <guest>
+                <name>Jessica Lee</name>
+                <age>20</age>
+            </guest>
+        </guests>
+    </entry>
+
+    <!-- Entry 5: Minor main entrant with parent attending -->
+    <entry>
+        <eventDate>2026-04-11</eventDate>
+        <eventLocation>Birmingham</eventLocation>
+        <mainEntrant>
+            <name>Thomas Wright</name>
+            <dateOfBirth>2009-09-05</dateOfBirth>
+            <age>16</age>
+            <sex>Male</sex>
+            <parentGuardian>
+                <name>Andrew Wright</name>
+                <relationship>Father</relationship>
+            </parentGuardian>
+            <skateboardingExperience>Intermediate - 4 years experience, enjoys bowl and street skating</skateboardingExperience>
+            <skateboardsOwned>
+                <skateboard>Street deck - 8 inch</skateboard>
+                <skateboard>Bowl deck - 8.5 inch</skateboard>
+            </skateboardsOwned>
+            <favouriteProfessionals>
+                <professional>Nyjah Huston</professional>
+                <professional>Ryan Sheckler</professional>
+                <professional>Tom Schaar</professional>
+            </favouriteProfessionals>
+            <contactDetails>
+                <phoneNumbers>
+                    <phone type="mobile" preferred="true">+44 7700 900654</phone>
+                    <phone type="home" preferred="false">+44 121 496 0321</phone>
+                </phoneNumbers>
+                <email>thomas.wright@email.com</email>
+                <address>
+                    <street>56 Hagley Road</street>
+                    <city>Birmingham</city>
+                    <postcode>B16 8PE</postcode>
+                    <country>United Kingdom</country>
+                </address>
+            </contactDetails>
+        </mainEntrant>
+        <guests>
+            <guest>
+                <name>Andrew Wright</name>
+                <age>48</age>
+            </guest>
+            <guest>
+                <name>James Cooper</name>
+                <age>18</age>
+            </guest>
+        </guests>
+    </entry>
+</eveningEvents>

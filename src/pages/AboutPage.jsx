@@ -11,7 +11,7 @@ function AboutPage() {
           <img 
             src="/assets/about_stake.png" 
             alt="Skater" 
-            className="absolute inset-0 w-full lg:w-[26vw] h-full object-cover "
+            className="absolute inset-0 w-full lg:w-full h-full object-cover "
           />
         </div>
 
@@ -19,14 +19,14 @@ function AboutPage() {
           <div className="absolute top-0 right-0 left-0">
             <NavbarTry fixed={false} />
           </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 py-16 md:py-24 relative">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 py-4 lg:py-12 relative">
           {/* Navbar on top right */}
         
 
-          <div className="mt-20">
+          <div className="mt-4">
             {/* Logo */}
-            <div className="mb-12">
-             <img src="assets/logo.png" className='w-[60%]' />
+            <div className="mb-12 flex flex-col  items-center justify-center">
+             <img src="assets/logo.png" className='w-[70%]' />
               <p className="text-base md:text-lg font-normal text-black">
                 Ride the Impossible from Bristol to the World.
               </p>
@@ -57,7 +57,7 @@ function AboutPage() {
 
       {/* Our DNA Section */}
       {/* Our DNA Section */}
-      <section className="bg-[#FFB6C1] text-black py-2 px-4 md:px-8">
+      <section className="bg-[#f9e7e5] text-black py-2 px-4 md:px-8">
         <NavbarTry fixed={false} logoWhite />
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl md:text-7xl font-display font-black text-center mb-12 text-[#FF1493] uppercase">
@@ -85,9 +85,9 @@ function AboutPage() {
                   desc: 'We obsess over engineering and durability so you can push past your limits with total confidence.'
                 }
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="bg-[#FFEB3B] border-4 border-dashed border-black rounded-full px-6 py-3 flex-shrink-0">
-                    <span className="text-lg font-black uppercase whitespace-nowrap">{item.title}</span>
+                <div key={i} className="flex items-center gap-4">
+                  <div className="bg-[#f8d14f] border-4 border-dashed border-black rounded-full px-6 py-3 shrink-0 w-50 flex items-center justify-center">
+                    <span className="text-base lg:text-lg font-black uppercase text-center">{item.title}</span>
                   </div>
                   <p className="text-base leading-relaxed pt-2">
                     {item.desc}

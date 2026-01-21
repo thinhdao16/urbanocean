@@ -34,7 +34,7 @@ function NavbarTry({ fixed = true, className="", logoWhite= false }) {
       </button>
 
       {/* Desktop Menu */}
-      <div className="hidden lg:flex gap-10  tracking-[0.2em] font-black ">
+      <div className="hidden lg:flex gap-10  tracking-[0.2em] font-medium ">
         <Link 
           to="/" 
           className={`hover:text-white transition-colors ${isActive('/') ? 'text-white' : 'text-gray-400'}`}

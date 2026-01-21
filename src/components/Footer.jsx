@@ -8,8 +8,8 @@ function Footer() {
         <div className="flex flex-col items-center  md:items-start gap-6 col-span-1 md:col-span-2">
        
           <img src="assets/logo_white.png" className='w-[120px] ml-0 lg:ml-20' />
-          <p className=" leading-loose  ">
-            When others chase the sea, we turn the city into waves.<br />
+          <p className=" leading-loose max-w-[450px] ">
+            When others chase the sea, we turn the city into waves.
             Raptor transforms UK concrete into an endless coastline.
           </p>
           <div className="flex gap-4 w-full max-w-md mt-4">

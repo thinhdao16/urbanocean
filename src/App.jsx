@@ -7,6 +7,8 @@ import AboutPage from './pages/AboutPage'
 import RaptorPage from './pages/RaptorPage'
 import RoadshowPage from './pages/RoadshowPage'
 import RegisterPage from './pages/RegisterPage'
+import EveningEventsPage from './pages/EveningEventsPage'
+import EveningEventRegisterPage from './pages/EveningEventRegisterPage'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/raptor" element={<RaptorPage />} />
           <Route path="/roadshow" element={<RoadshowPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/evening-events" element={<EveningEventsPage />} />
+          <Route path="/evening-events/register" element={<EveningEventRegisterPage />} />
         </Routes>
         <Footer />
       </div>

@@ -6,7 +6,7 @@ function RaptorPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 py-20">
+      <section className="relative h-[90vh] flex flex-col items-center justify-start overflow-hidden px-4 py-24">
         <NavbarTry fixed={false} className='absolute!' />
         <img
           src="/assets/roadshow_page_main.png"
@@ -15,17 +15,17 @@ function RaptorPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
 
-        <div className="relative z-10 text-center max-w-5xl">
-          <h1 className="text-6xl md:text-8xl lg:text-8xl font-display font-black text-white mb-8 uppercase leading-tight">
+        <div className="relative z-10 text-center max-w-5xl ">
+          <h1 className="text-4xl md:text-8xl lg:text-8xl font-display font-black text-white mb-8 uppercase leading-tight">
             THE URBAN OCEAN
           </h1>
-          <p className="text-lg md:text-2xl text-white mb-6 leading-relaxed">
-            Bringing the soul of the ocean into the heart of the city.
-          </p>
-          <p className="text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-            From London's historic streets to the energetic square of Devonshire Green,<br />
-            Raptor is your companion for riding every concrete wave.
-          </p>
+          <div className="w-full flex justify-center">
+            <p className="   text-lg md:text-2xl text-white mb-6 leading-relaxed max-w-[750px]">
+              Bringing the soul of the ocean into the heart of the city.
+              From London's historic streets to the energetic square of Devonshire Green,
+              Raptor is your companion for riding every concrete wave.
+            </p>
+          </div>
         </div>
 
         {/* Bottom Section - NO BEACH? NO BOTHER */}
@@ -41,60 +41,58 @@ function RaptorPage() {
 
       {/* Product Launch Section */}
       <section className="bg-skater-yellow text-black py-2 px-4 md:px-8">
-        <NavbarTry fixed={false}  />
+        <NavbarTry fixed={false} />
 
         <div className="max-w-7xl mx-auto">
-          <p className="text-center text-pink-500 font-black text-xl md:text-2xl uppercase italic mb-4">PRODUCT LAUNCH</p>
-          <h2 className="text-center text-5xl md:text-[100px] font-display leading-[0.8] mb-16 md:mb-20 text-[#00BCD4] italic">
+          <p className="text-start text-white font-black text-xl md:text-5xl uppercase  mb-4">PRODUCT LAUNCH</p>
+          <h2 className="text-center text-4xl md:text-[75px] font-display leading-[0.8] mb-4 text-[#00BCD4] ">
             MEET THE RAPTOR<br />
             URBAN OCEAN
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
-            <div>
-              <h3 className="text-3xl md:text-5xl font-display mb-8 italic">BORN FOR THE STREETS, INSPIRED BY THE SEA</h3>
+          <div className="grid grid:cols-1 lg:grid-cols-3 gap-12 md:gap-20 items-center">
+            <div className='col-span-2'>
+              <h3 className="text-3xl md:text-5xl font-display font-black mb-8 text-white uppercase">BORN FOR THE STREETS, INSPIRED BY THE SEA</h3>
 
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">"Ocean Tough" Material (Ultra-Durable):</h4>
-                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
-                    7-ply Canadian maple reinforced with carbon fiber for power and long-lasting performance.
+              <ul className="space-y-6 text-black list-disc list-outside ml-6 md:ml-8">
+                <li>
+                  <p className="text-base md:text-lg leading-relaxed">
+                    <span className="font-black">"Ocean Tough" Material (Ultra-Durable):</span> 7-ply Canadian maple reinforced with carbon for powerful pop and long-lasting durability on streets and skateparks.
                   </p>
-                </div>
+                </li>
 
-                <div>
-                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">"Urban Ocean" Aesthetic:</h4>
-                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
-                    Teal and sand wave graphics bring a cool, coastal flow into the heart of the city, finished with bold RAPTOR x SCATERS graffiti logos.
+                <li>
+                  <p className="text-base md:text-lg leading-relaxed">
+                    <span className="font-black">"Urban Ocean" Aesthetic:</span> Teal and sand wave graphics bring a cool coastal flow into the heart of the city, finished with bold RAPTOR × SCATERS graffiti logos.
                   </p>
-                </div>
+                </li>
 
-                <div>
-                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">Long-Distance Carving Truck Technology:</h4>
-                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
-                    Tuned trucks support fluid S-curves and zig-zag lines, keeping speed with less foot-down.
+                <li>
+                  <p className="text-base md:text-lg leading-relaxed">
+                    <span className="font-black">Long-Distance Carving Truck Technology:</span> Tuned trucks support fluid S-curves and zig-zag lines, keeping speed with less effort.
                   </p>
-                </div>
+                </li>
 
-                <div>
-                  <h4 className="text-xl md:text-2xl font-display mb-2 italic">"No Beach? No Bother." Grip:</h4>
-                  <p className="text-sm md:text-base font-black uppercase tracking-wide leading-relaxed opacity-80">
-                    High-grip tape with an exclusive message at the tail for instant street cred.
+                <li>
+                  <p className="text-base md:text-lg leading-relaxed">
+                    <span className="font-black">"No Beach? No Bother." Grip:</span> High-grip tape with an exclusive message at the tail for total control on technical tricks
                   </p>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
 
-            <div className="relative">
-              <div className="absolute top-0 right-0 w-full h-full bg-[#00BCD4] -rotate-6 translate-x-4 translate-y-4" />
-              <div className="relative aspect-[3/4] bg-white p-4 shadow-2xl">
+          <div className="col-span-3 lg:col-span-1">
+              <div className="relative w-full">
+              <div className="absolute top-0 right-0 " />
+              <div className="relative flex justify-center w-full  p-4 ">
                 <img
-                  src="https://images.unsplash.com/photo-1547447134-cd3f5c716030?auto=format&fit=crop&q=80&w=800"
+                  src="/assets/raptor_stake.png"
                   alt="The Raptor Skateboard"
-                  className="w-full h-full object-cover"
+                  className="w-auto h-full lg:h-[75vh] object-cover"
                 />
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -102,7 +100,7 @@ function RaptorPage() {
       {/* Elite Collabs Section */}
       <section className="bg-[#4DD0E1] text-black py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-4">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-black text-[#FF1493] mb-2 uppercase">
               THE ELITE COLLABS
             </h2>
@@ -172,8 +170,28 @@ function RaptorPage() {
           </p>
         </div>
       </section>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <img
+          src="/assets/home_page_surf.png"
+          alt="Join Now"
+          className="absolute inset-0 w-full h-screen object-cover brightness-[0.3]"
+        />
+        <NavbarTry fixed={false} className='absolute!' logoWhite />
+        <div className="relative z-10 text-center px-4">
+          <p className="text-pink-500 font-black text-xl md:text-5xl   mb-2">REGISTER AND ENJOY</p>
+          <h2 className="text-5xl md:text-[60px] font-display text-[#FFEB3B] mb-12 italic leading-none">
+            SURF INTO THE CITY
+          </h2>
+          <Link
+            to="/register"
+            className="group relative  flex justify-center"
+          >
+            <img src="/assets/home_page_surf_join.png" alt="" className='w-[80%]' />
 
-   
+          </Link>
+        </div>
+      </section>
+
 
     </div>
   )

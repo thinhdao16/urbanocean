@@ -56,7 +56,7 @@ function HomePage() {
       <section className="bg-[#FFEB3B] text-black py-2 px-4 md:px-8">
         <NavbarTry fixed={false} />
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-black leading-tight mb-12 text-[#00BCD4] uppercase">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-display font-black leading-tight mb-12 text-[#00BCD4] uppercase">
             BORN IN BRISTOL<br />
             BRED ON THE STREETS
           </h2>
@@ -114,7 +114,7 @@ function HomePage() {
       </section>
 
       {/* Teaser Section */}
-      <section className="relative min-h-screen flex  justify-start px-4 md:px-32  ">
+      <section className="relative min-h-screen flex  justify-start px-4   ">
         <img
           src="/assets/home_bg_pink.png"
           alt="Sunset Beach"
@@ -170,7 +170,9 @@ function HomePage() {
       </section>
 
       {/* Upcoming Events Grid */}
-      <section className="bg-[#c4f1f1] text-black py-16 md:py-24 px-4 md:px-8">
+      <section className="bg-[#c4f1f1] text-black py-4 px-4 md:px-8">
+        <NavbarTry fixed={false}  />
+
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-[#FF1493] font-black text-lg md:text-4xl uppercase mb-4">UPCOMING EVENT</p>
           <h2 className="text-4xl md:text-6xl lg:text-5xl font-display font-black mb-16 text-skater-yellow uppercase leading-tight">
