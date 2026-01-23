@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { trackEvent } from '../analytics'
 
 function EveningEventRegisterPage() {
   // Google Form embed URL - THAY BẰNG LINK CỦA BẠN
@@ -62,6 +63,7 @@ function EveningEventRegisterPage() {
             href={GOOGLE_FORM_URL.replace('?embedded=true', '')}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackEvent('Registration', 'Open External Form', 'Evening Event')}
             className="inline-block px-8 py-4 bg-[#FF1493] text-white font-black uppercase tracking-wide rounded-full hover:bg-black transition-colors"
           >
             Open Registration Form →

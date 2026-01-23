@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import NavbarTry from '../components/NavbarTry'
+import { trackEvent } from '../analytics'
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -27,6 +28,10 @@ function RegisterPage() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
+    
+    // Track GA4 event
+    trackEvent('Registration', 'Submit Form', formData.eventLocation);
+    
     alert('Registration submitted! We will contact you soon.')
   }
 
